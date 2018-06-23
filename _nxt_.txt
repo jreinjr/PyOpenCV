@@ -1,0 +1,11 @@
+photobooth
+	open webcam gui
+	save webcam frames
+	toggle chessboard detection overlay (preview only)
+
+calibrate
+	load all frames in a folder
+	preview all frames
+	toggle chessboard detection overlay
+	calibrate lens
+	view calibrated 

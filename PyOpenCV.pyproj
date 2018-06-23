@@ -4,14 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e2773ccc-a365-4a26-b3f4-c7cfcf5af429</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PyOpenCV.py</StartupFile>
+    <StartupFile>PhotoBooth.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PyOpenCV</Name>
     <RootNamespace>PyOpenCV</RootNamespace>
-    <InterpreterId>Global|PythonCore|2.7</InterpreterId>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,10 +22,27 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CameraCalib.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DebugTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Calibrate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Capture.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PhotoBooth.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PyOpenCV.py" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="Global|PythonCore|2.7" />
     <InterpreterReference Include="Global|PythonCore|3.6" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
